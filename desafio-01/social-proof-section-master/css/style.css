@@ -1,0 +1,25 @@
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "header stars-container"
+                         "cards-container cards-container";
+    border: 1px solid red;
+}
+
+.header{
+    grid-area: header;
+    border: 1px solid darkblue;
+}
+
+.stars-container{
+    grid-area: stars-container;
+    border: 1px solid green;
+}
+
+.cards-container{
+    grid-area: cards-container;
+    border: 1px solid darkorange;
+}
