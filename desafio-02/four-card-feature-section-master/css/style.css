@@ -2,14 +2,12 @@
 
 body{
     font-family: 'Poppins', sans-serif;
-    min-height: 100vh;
+    background-color: var(--veryLightGray);
+    color: var(--veryDarkBlue);
 }
 
 .container{
-    margin: 90px auto 0;
-    max-width: 1440px;
-    border: 1px solid red;
-    text-align: center;
+    margin: 90px 30px;
 }
 
 .header{
@@ -17,21 +15,125 @@ body{
 }
 
 .header h1{
-    font-size: 1.7em;
     font-weight: 200;
-    color: var(--veryDarkBlue);
+    font-size: 1.6em;
+    animation: leftright 1000ms;
 }
 
 .header h2{
+    font-weight: 600;
     font-size: 1.6em;
-    color: var(--veryDarkBlue);
+    animation: rightleft 1000ms;
 }
 
 .header p{
+    font-size: 1.05em;
     color: var(--grayishBlue);
+    margin-top: 10px;
+    margin-bottom: 70px;
+    animation: updown 1000ms;
 }
 
 .cards-container{
-    border: 1px solid;
+    max-width: 500px;
+    margin: 0 auto;
+    animation: downup 1000ms;
 }
 
+.cards{
+    border-radius: 8px;
+    background-color: var(--veryLightGray);
+    box-shadow: 3px 10px 10px var(--grayishBlue);
+    margin-bottom: 30px;
+    min-width: 310px;
+    max-width: 500px;
+    height: 222px;
+    padding: 30px;
+}
+
+.cards p{
+    color: var(--grayishBlue);
+    font-size: 0.89em;
+    margin: 10px 0;
+}
+
+.cards .image{
+    text-align: right;
+}
+
+.card1{
+    border-top: 5px solid var(--cyan);
+}
+
+.card2{
+    border-top: 5px solid var(--red);
+}
+
+.card3{
+    border-top: 5px solid var(--orange);
+}
+
+.card4{
+    border-top: 5px solid var(--blue);
+}
+
+@media(min-width: 600px){
+    .header{
+        max-width: 525px;
+        margin: 0 auto;
+    }
+
+    .header h1{
+        font-size: 2.5em;
+    }
+
+    .header h2{
+        font-size: 2.5em;
+    }
+}
+
+@media only screen and (min-width: 780px){
+    .cards-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 30px;
+        max-width: 900px;
+    }
+    .two-cards{
+        grid-column: 2/3;
+        grid-row: 1/3;
+    }
+}
+
+@media only screen and (min-width: 1175px){
+    .cards-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 1200px;
+    }
+    .cards{
+        width: 355px;
+        height: 254px;
+    }
+}
+
+@keyframes leftright{
+    0%{transform: translateX(-500px);}
+    100%{transform: translateX(0px);}
+}
+
+@keyframes rightleft{
+    0%{transform: translateX(500px);}
+    100%{transform: translateX(0px);}
+}
+
+@keyframes downup{
+    0%{transform: translateY(500px);}
+    100%{transform: translateY(0px);}
+}
+
+@keyframes updown{
+    0%{transform: translateY(-500px);}
+    100%{transform: translateY(0px);}
+}
