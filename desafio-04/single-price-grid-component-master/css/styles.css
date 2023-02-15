@@ -1,27 +1,140 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
 
-body{
-    font-family: 'Karla', sans-serif;
+body {
+  font-family: 'Karla', sans-serif;
 }
 
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--lightGray);
+  flex-direction: column;
+}
 
+.card-container {
+  max-width: 640px;
+  height: 480px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 10px;
+  overflow: hidden;
+}
 
+.join {
+  grid-column: 1/3;
+  height: 230px;
+  background-color: #FFF;
+  padding: 40px;
+}
 
+.join .join-title {
+  color: var(--cyan);
+  font-weight: 700;
+}
 
+.join .join-text1 {
+  margin: 20px 0;
+  color: var(--brightYellow);
+  font-weight: 700;
+}
 
+.join .join-text2 {
+  color: var(--grayishBlue);
+  font-weight: 400;
+  line-height: 30px;
+}
 
+.sign-up {
+  background-color: var(--cyan);
+  padding: 40px;
+  color: var(--lightGray);
+}
 
+.sign-up .sign-up-text1 {
+  font-weight: 700;
+  margin-bottom: 20px;
+  display: block;
+  font-size: 1em;
+}
 
+.sign-up .dollar {
+  display: flex;
+  align-items: center;
+}
 
+.sign-up .dollar .dollar-price {
+  font-size: 2.5em;
+}
 
+.sign-up .dollar .dollar-month {
+  font-size: 1em;
+  margin-left: 5px;
+}
 
+.sign-up .sign-up-btn {
+  margin-top: 20px;
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  color: var(--lightGray);
+  background-color: var(--brightYellow);
+  font-weight: 700;
+  font-size: 1em;
+}
 
+.why-us {
+  background-color: #4abebd;
+  padding: 40px;
+  color: var(--lightGray);
+}
+
+.why-us h3 {
+  font-size: 1em;
+  margin-bottom: 30px;
+}
+
+.why-us p {
+  font-size: 0.8em;
+  margin-bottom: 2px;
+}
 
 .attribution {
-    font-size: 11px;
-    text-align: center;
+  font-size: 11px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media(max-width: 790px){
+  .card-container{
+    max-width: 310px;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 754px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
   }
 
-  .attribution a {
-    color: hsl(228, 45%, 44%);
+  .join .join-title{
+    font-size: 1.2em;
   }
+  
+  .join .join-text1{
+    font-size: 0.8em;
+    margin: 15px 0;
+  }
+
+  .join .join-text2{
+    font-size: 0.8em;
+    line-height: 18px;
+  }
+
+
+
+}
