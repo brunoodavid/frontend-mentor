@@ -77,6 +77,10 @@ body{
     color: #FFF;
 }
 
+.social-media a:last-child{
+    margin-right: 0;
+}
+
 .social-media a:hover{
     color: var(--softMagenta);
 }
@@ -179,8 +183,13 @@ footer{
     .main-img img{
         width: 100%;
     }
+
+    .main-content{
+        margin-left: 0;
+        text-align: center;
+    }
     .main-content .title{
-        font-size: 3.5em;
+        font-size: 2.5em;
     }
 
     .main-content .text{
@@ -190,5 +199,6 @@ footer{
 
     .social-media{
         justify-content: center;
+        align-items: center;
     }
 }
