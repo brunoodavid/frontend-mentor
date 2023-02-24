@@ -6,6 +6,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-color: var(--violet);
+    overflow-y: hidden;
 }
 
 .container{
@@ -185,16 +186,17 @@ footer{
     }
 
     .main-content{
+        margin-top: 0;
         margin-left: 0;
         text-align: center;
     }
     .main-content .title{
-        font-size: 2.5em;
+        font-size: 4em;
     }
 
     .main-content .text{
-        font-size: 1.2em;
-        line-height: 22px;
+        font-size: 2em;
+        line-height: 40px;
     }
 
     .social-media{
