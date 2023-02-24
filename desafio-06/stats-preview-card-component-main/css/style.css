@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+
+body{
+    height: 100vh;
+    background-color:  hsl(233, 47%, 7%);
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-container{
+    display: flex;
+    width: 1113px;
+    height: 446px;
+    background-color:  hsl(244, 38%, 16%);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.section1{
+    padding: 50px 60px;
+}
+
+.section1 .title{
+    font-size: 2.5em;
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 30px;
+}
+
+.section1 .title .insights{
+    color: hsl(277, 64%, 61%);
+}
+
+.section1 .text{
+    font-size: 1.2em;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+.informations{
+    margin-top: 80px;
+    display: flex;
+    width: 370px;
+    justify-content: space-between;
+}
+
+.information .numbers{
+    font-size: 2em;
+    color: hsl(0, 0%, 100%);
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+
+.information .text{
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+    font-size: 1em;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.section2{
+    width: 100%;
+    
+}
+
+.section2 .image-section2{
+    background-image: url(../images/image-header-desktop.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 446px;
+    background-size: cover;
+    
+}
+
+.image-section2 .layer{
+    background-color: rgba(110, 30, 160, 0.7);
+    width: 100%;
+    height: 100%;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media(max-width: 1215px){
+    .card-container{
+        width: 330px;
+        height: 785px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 240px 1fr;
+        grid-template-areas: "section2"
+                             "section1";
+    }
+
+    .section1{
+        grid-area: section1;
+        width: 330px;
+        padding: 40px 30px;
+        text-align: center;
+    }
+
+    .section1 .title{
+        font-size: 1.6em;
+    }
+
+    .section1 .text{
+        font-size: 1em;
+    }
+
+    .informations{
+        margin-top: 20px;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .information{
+        margin-bottom: 20px;
+        letter-spacing: 2px;
+    }
+
+    .information .text{
+        font-size: 0.9em;
+    }
+
+    .section2{
+        grid-area: section2;
+        width: 330px;
+        height: 240px;
+    }
+
+    .section2 .image-section2{
+        background-image: url(../images/image-header-mobile.jpg);
+        height: 240px;
+        width: 100%;
+    }
+}
