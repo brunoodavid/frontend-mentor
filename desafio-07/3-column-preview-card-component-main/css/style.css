@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+body{
+    font-family: 'Lexend Deca', sans-serif;
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: --VeryLightGray;
+}
+
+.cards-container{
+    display: flex;
+    width: 925px;
+    height: 510px;
+    border-radius: 10px;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 308px;
+    padding: 43px;
+}
+
+.card1{
+    background-color: var(--BrightOrange);
+}
+
+.card2{
+    background-color: var(--DarkCyan);
+}
+
+.card3{
+    background-color: var(--VeryDarkCyan);
+}
+
+.card-title{
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 40px 0;
+    font-size: 2em;
+    color: var(--VeryLightGray);
+}
+
+.card-text{
+    color: var(--TransparentWhite);
+    font-size: 1em;
+    margin-bottom: 87px;
+}
+
+.card-btn{
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 50px;
+    border: none;
+    background-color: var(--VeryLightGray);
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+
+.card-btn1{
+    color: var(--BrightOrange);
+}
+
+.card-btn2{
+    color: var(--DarkCyan);
+}
+
+.card-btn3{
+    color: var(--VeryDarkCyan);
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+@media(max-width: 975px){
+    .cards-container{
+        width: 330px;
+        height: 1328px;
+    }
+    .card{
+        width: 330px;
+        height: 443px;
+    }
+    .card-text{
+        margin-bottom: 50px;
+    }
+}
