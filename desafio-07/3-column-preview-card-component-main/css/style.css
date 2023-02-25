@@ -2,10 +2,10 @@
 
 body{
     font-family: 'Lexend Deca', sans-serif;
-    height: 100vh;
 }
 
 .container{
+    margin: 87px auto 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -68,12 +68,30 @@ body{
     color: var(--BrightOrange);
 }
 
+.card-btn1:hover{
+    background-color: var(--BrightOrange);
+    border: 2px solid var(--VeryLightGray);
+    color: var(--VeryLightGray);
+}
+
 .card-btn2{
     color: var(--DarkCyan);
 }
 
+.card-btn2:hover{
+    background-color: var(--DarkCyan);
+    border: 2px solid var(--VeryLightGray);
+    color: var(--VeryLightGray);
+}
+
 .card-btn3{
     color: var(--VeryDarkCyan);
+}
+
+.card-btn3:hover{
+    background-color: var(--VeryDarkCyan);
+    border: 2px solid var(--VeryLightGray);
+    color: var(--VeryLightGray);
 }
 
 
