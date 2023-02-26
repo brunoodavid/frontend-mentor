@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+body{
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px; 
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--veryDarkBlueBG);
+    gap: 40px;
+}
+
+.card-container{
+    background-color: var(--veryDarkBlueCBG);
+    width: 350px;
+    height: 600px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.image-equilibrium{
+    width: 100%;
+    height: 305px;
+    border-radius: 7px;
+}
+
+.image-link{
+    position: relative;
+    display: flex;
+}
+
+.image-link::before{
+    display: none;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: var(--cyan);
+    position: absolute;
+    border-radius: 7px;
+    opacity: 0.5;
+}
+
+.image-link::after{
+    display: none;
+    content: '';
+    background-image: url(../images/icon-view.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.image-link:hover::before,
+.image-link:hover::after{
+    display: block;
+}
+
+.card-title{
+    font-size: 1.4em;
+    margin: 25px 0;
+    color: #FFF;
+}
+
+.card-title:hover{
+    color: var(--cyan);
+    cursor: pointer;
+}
+
+.card-text{
+    color: var(--softBlue);
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+.information-container{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--veryDarkBlueLine);
+    padding-bottom: 30px;
+}
+
+.ethereum{
+    color: var(--cyan);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.ethereum::before{
+    content: '';
+    width: 10px;
+    height: 20px;
+    background-image: url(../images/icon-ethereum.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+}
+
+.time{
+    color: var(--softBlue);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.time::before{
+    content: '';
+    width: 13px;
+    height: 20px;
+    background-image: url(../images/icon-clock.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+}
+
+.creator-container{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.creator-container img{
+    width: 30px;
+    border: 1px solid #FFF;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.creator-container p{
+    color: var(--softBlue);
+}
+
+span{
+    color: #FFF;
+    cursor: pointer;
+}
+
+span:hover{
+    color: var(--cyan);
+}
+
+.attribution {
+    font-size: 11px; 
+    text-align: center;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
